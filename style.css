@@ -6,3 +6,26 @@
     padding:0px;
     margin:0px;
 }
+#head {
+    background-color:#5A4736;
+    height:100px;
+    width:100vw;
+}
+#menu {
+    background-color:#B0B7A7;
+    width:300px;
+    height:800px;
+    text-align:center;
+    float:left;
+}
+#main {
+    background-color:#8C7C6F;
+    height:800px;
+    float:left;
+    width:83vw;
+}
+.format {
+    color:#FFFFFF;
+    font-size:40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
