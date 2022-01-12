@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="keywords" content="egzamin, euklides, parzyste">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="format">
+    <div id="container">
+        <div id="head">
+            <img src="logo.png">
+            Egzamin E.14
+        </div>
+        <div id="menu">
+            <a href="index.html">Index</a>
+            <br><br>
+            <a href="nwd.html">NWD</a>
+            <br><br>
+            <a href="parzyste.php">Liczby parzyste</a>
+        </div>
+        <div id="main">
+            NWD <br>
+            <input id="jeden" type="number"> A <br>
+            <input id="dwa" type="number"> B <br>
+            <input type="submit" value="Oblicz"> <span id="wyj">Obliczony NWD : </span>
+        </div>
+    </div>
+</body>
+<script>
+    function nwd() {
+            let a = parseInt(document.getElementById("jeden").value);
+            let b = parseInt(document.getElementById("dwa").value);
+            while (a!=b) {
+                if (a>b) {
+                    a= a-b;
+                } else {
+                    b=b-a;
+                }
+            }
+            let wyjscie =  document.getElementById("wyj");
+            wyjscie.innerHTML = "Obliczony NWD :" + a;
+        }
+    </script> 
+</html>
