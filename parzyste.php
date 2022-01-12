@@ -28,6 +28,17 @@
                 <input name="dwa" type="number"> B <br>
                 <input name="add" type="submit" value="Oblicz"> Liczby parzyste :
             </form>
+            <?php 
+            if(isset($_POST['add'])) {
+                $a = $_POST['jeden'];
+                $b = $_POST['dwa'];
+                for($i=$a;$i<=$b;$i++) {
+                    if($i%2==0) {
+                        echo $i . ',';
+                    }
+                }
+            }
+            ?>
         </div>
     </div>
 </body>
